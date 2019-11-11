@@ -1,0 +1,26 @@
+<div class="info-body">
+
+{{#with singleMovie}}
+<div class="singlemovie-box">
+    <div>
+        <img src="{{image}}" alt="{{title}}">
+    </div>
+    <div class="info">
+        <a href="/movies">Go Back</a>
+        <h2 class="movie-title">{{title}}</h2>
+        <p>{{director}}</p>
+        <p>Stars</p>
+        <ul>
+            {{#each stars}}
+            <li>{{this}}</li>
+            {{/each}}
+        </ul>
+        <p>{{description}}</p>
+        {{#each showtimes}}
+        {{this}} |
+        {{/each}}
+        {{/with}}
+    </div>
+
+</div>
+</div>
